@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 
 class TodoItem extends Component {
+
+  constructor(props) {
+    super(props);
+    this.name = props.name;
+  }
+
   render() {
     return (
-      <li>do something</li>
+      <li>{ this.name }</li>
     )
   }
 }
