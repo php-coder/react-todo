@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+import TodoList from './TodoList';
+
 import './App.css';
 
 class App extends Component {
@@ -6,24 +9,6 @@ class App extends Component {
     return (
       <TodoList />
     );
-  }
-}
-
-class TodoList extends Component {
-  render() {
-    return (
-      <ul>
-        <TodoItem />
-      </ul>
-    )
-  }
-}
-
-class TodoItem extends Component {
-  render() {
-    return (
-      <li>do something</li>
-    )
   }
 }
 
