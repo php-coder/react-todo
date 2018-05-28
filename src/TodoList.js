@@ -14,7 +14,7 @@ class TodoList extends Component {
 
   render() {
     return (
-      <ul>
+      <ul style={{ listStyleType: "none" }}>
         { this.items }
       </ul>
     )
