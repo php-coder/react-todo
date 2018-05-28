@@ -8,7 +8,7 @@ class TodoList extends Component {
     super(props);
     this.items = props.items.map(
       (item) =>
-      <TodoItem name={ item.name } />
+      <TodoItem key={ item.id } name={ item.name } />
     );
   }
 
